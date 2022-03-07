@@ -1,0 +1,67 @@
+.intro {
+    padding: 7rem 0;
+
+    &-container {
+        padding: 1rem;
+        margin: 0 auto;
+        width: 70%;
+
+        &__title {
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        &__box {
+            width: 100%;
+            border-radius: .5rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #eee;
+
+            &-header {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                &__tab {
+                    margin: 1rem 1.4rem;
+                    background-color: aqua;
+                    border-radius: .5rem;
+                    width: 150px;
+                    text-align: center;
+                    padding: .8rem 0;
+                    cursor: pointer;
+                    transition: all .4s ease-in-out;
+
+                    &.active-tab {
+                        background-color: black;
+                        color: #fefefe;
+                        transition: all .4s ease-in-out;
+
+                    }
+
+                }
+            }
+
+            &-body {
+                padding: 1.3rem .5rem;
+
+                &__text {
+                    opacity: 0;
+                    display: none;
+                    margin: 0 .8rem;
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                    transition: all .4s ease-in-out;
+
+
+                    &.active-text {
+                        opacity: 1;
+                        display: block;
+                        transition: all .4s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
