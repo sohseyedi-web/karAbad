@@ -1,0 +1,16 @@
+.services {
+    padding: 6rem 0;
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &__right,
+        &__left {
+            width: 25%;
+            border: 1px solid #000;
+            border-radius: .5rem;
+        }
+    }
+}

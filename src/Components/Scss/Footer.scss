@@ -1,0 +1,38 @@
+.footer {
+    padding: 2rem;
+
+    &-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &__item {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            h6 {
+                font-weight: bold;
+                font-size: 1.5rem;
+                text-align: right;
+            }
+
+            a {
+                margin: .5rem 0;
+                transition: all .4s ease-in-out;
+
+
+                &:hover {
+                    transition: all .4s ease-in-out;
+                }
+            }
+
+            &-socials {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #000;
+            }
+        }
+    }
+}

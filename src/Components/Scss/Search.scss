@@ -1,0 +1,43 @@
+.search {
+    padding: 7rem 0;
+
+    &-box {
+        width: 55%;
+        height: 100px;
+        margin: 0 auto;
+        background-color: #000;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+
+        &__input {
+            width: 60%;
+            height: 40%;
+            outline: none;
+            font-size: 2rem;
+            padding-right: .1rem;
+        }
+
+        &__radio {
+            width: 20%;
+            height: 40%;
+        }
+
+        &__btn {
+            width: 8%;
+            height: 40%;
+            border-radius: .5rem;
+            background-color: aqua;
+            border: none;
+        }
+    }
+
+    &-full {
+        width: 55%;
+        margin: .5rem auto;
+        text-align: left;
+    }
+}
