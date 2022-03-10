@@ -8,7 +8,7 @@
         &__item {
             background-color: #efefef;
             position: relative;
-            width: 70%;
+            width: 75%;
             margin: 3rem auto;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
             padding: 1rem;
@@ -31,7 +31,7 @@
                 right: 0;
                 height: 100%;
                 width: 5px;
-                background-color: #1BFE7D;
+                background-color: #14286d;
                 top: 0;
                 border-top-right-radius: .5rem;
                 border-bottom-right-radius: .5rem;
@@ -47,6 +47,7 @@
 
                 &__icon {
                     transition: all .4s ease-in-out;
+                    font-size: 1.5rem;
 
                     &.active-icon {
                         transform: rotate(45deg);

@@ -23,10 +23,10 @@ const Footer = () => {
                 <div className="footer-container__item ">
                     <h6>شبکه های اجتماعی</h6>
                     <div className="footer-container__item-socials">
-                        <a href=""><FiGithub /></a>
-                        <a href=""><FiInstagram /></a>
-                        <a href=""><FiLinkedin /></a>
-                        <a href=""><FiTwitter /></a>
+                        <a href=""><FiGithub size={25}/></a>
+                        <a href=""><FiInstagram size={25}/></a>
+                        <a href=""><FiLinkedin size={25}/></a>
+                        <a href=""><FiTwitter size={25}/></a>
                     </div>
                 </div>
             </div>

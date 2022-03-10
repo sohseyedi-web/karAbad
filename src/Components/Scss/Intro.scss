@@ -4,19 +4,21 @@
     &-container {
         padding: 1rem;
         margin: 0 auto;
-        width: 70%;
+        width: 75%;
 
         &__title {
             font-size: 2.2rem;
             font-weight: 600;
+            color: #252525;
         }
 
         &__box {
             width: 100%;
-            border-radius: .5rem;
+            border-radius: 1.5rem;
             margin-top: 1rem;
             padding: 1rem;
-            background-color: #eee;
+            background-color: #14286d;
+            color: #fefefe;
 
             &-header {
                 display: flex;
@@ -25,8 +27,9 @@
 
                 &__tab {
                     margin: 1rem 1.4rem;
-                    background-color: aqua;
-                    border-radius: .5rem;
+                    background-color: #fefefe;
+                    color: #252525;
+                    border-radius: 1.5rem;
                     width: 150px;
                     text-align: center;
                     padding: .8rem 0;
@@ -34,9 +37,10 @@
                     transition: all .4s ease-in-out;
 
                     &.active-tab {
-                        background-color: black;
-                        color: #fefefe;
+                        background-color: #ffdb07;
+                        color: #252525;
                         transition: all .4s ease-in-out;
+                        font-weight: bold;
 
                     }
 
@@ -50,7 +54,7 @@
                     opacity: 0;
                     display: none;
                     margin: 0 .8rem;
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     font-weight: 300;
                     transition: all .4s ease-in-out;
 

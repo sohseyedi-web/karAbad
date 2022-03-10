@@ -1,16 +1,42 @@
 .services {
-    padding: 6rem 0;
+    padding: 4rem 0;
 
     &-container {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        width: 75%;
+        margin: 0 auto;
 
         &__right,
         &__left {
-            width: 25%;
-            border: 1px solid #000;
-            border-radius: .5rem;
+            width: 30%;
+            border-radius: 1.5rem;
+            padding: .7rem 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            // background-color: #14286d;
+
+            img {
+                width: 100%;
+            }
+
+            &-body {
+                font-size: 1.1rem;
+                font-weight: 400;
+                color: #252525;
+
+                text-align: center;
+                margin-top: 2rem;
+
+                &__bold {
+                    font-weight: bold;
+                }
+            }
+
+
+            &.men {
+                margin-top: 5rem;
+            }
         }
     }
 }
