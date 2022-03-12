@@ -80,6 +80,19 @@
         &-container {
             &__item {
                 width: 100%;
+
+                &.active-drop {
+                    height: 350px;
+
+                }
+
+
+                &-body {
+                    p {
+                        padding: .8rem 1.1rem;
+                        font-size: .95rem;
+                    }
+                }
             }
         }
     }

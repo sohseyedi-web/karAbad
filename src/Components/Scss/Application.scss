@@ -171,5 +171,36 @@
 
             }
         }
+
+
+        @media screen and (max-width : 1024px) {
+            flex-direction: column;
+            width: 100%;
+
+            &__download {
+                width: 100%;
+
+                &-text {
+                    width: 100%;
+                    padding-top: .5rem;
+
+                    &__title,
+                    &__subtitle
+                     {
+                        text-align: center;
+                    }
+                }
+
+                &-img {
+                    display: none;
+                }
+            }
+
+            &__address,
+            &__newsletter {
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
     }
 }

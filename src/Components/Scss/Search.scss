@@ -1,51 +1,6 @@
 .search {
     padding: 7rem 0;
 
-    &-box {
-        width: 75%;
-        height: 100px;
-        margin: 0 auto;
-        background-color: #eee;
-        border-radius: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-
-
-
-        &__input,
-        &__city {
-            width: 30%;
-            height: 70%;
-            outline: none;
-            font-size: 1.2rem;
-            padding-right: .5rem;
-            border-radius: 1rem;
-            border: none;
-            background-color: #14286d;
-            color: #fff;
-        }
-
-        &__city {
-            width: 20%;
-        }
-
-
-
-
-        &__btn {
-            width: 10%;
-
-        }
-    }
-
-    &-full {
-        width: 75%;
-        margin: .5rem auto;
-        text-align: left;
-    }
-
     &-content {
         width: 75%;
         margin: 0 auto;
@@ -123,6 +78,39 @@
             a {
                 color: #fefefe;
                 font-size: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width : 1024px) {
+            width: 100%;
+
+            &__box {
+                flex-wrap: wrap;
+                padding-top: .5rem;
+
+                &-city {
+                    width: 30%;
+                }
+
+                &-service {
+                    width: 45%;
+                    margin: 0 1.1rem;
+                }
+
+                &-pip {
+                    display: none;
+                }
+
+                &-btn {
+                    margin-right: 0;
+                }
+
+                &-full {
+                    position: absolute;
+                    content: '';
+                    bottom: -68%;
+                    right: -6%;
+                }
             }
         }
     }

@@ -1,10 +1,16 @@
 .navbars {
     padding: 1rem;
+    position: relative;
+
 
     &-items {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        &__responsive {
+            display: none;
+        }
 
         &__right,
         &__left {
@@ -14,6 +20,13 @@
             &-logo {
                 font-size: 1.5rem;
                 font-weight: bold;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    width: 45px;
+                    height: 45px;
+                }
             }
 
             &-text {
@@ -82,6 +95,74 @@
 
             &-number {
                 margin-left: 1rem;
+            }
+
+            &-mobile {
+                display: none;
+            }
+        }
+
+
+        @media screen and (max-width : 1024px) {
+
+            &__right,
+            &__left {
+
+                &-text,
+                &-number,
+                &-btn {
+                    display: none;
+
+                    &.btn-order {
+                        display: block;
+                        margin-left: .5rem;
+                    }
+                }
+
+
+
+                &-mobile {
+                    display: block;
+                    color: #14286d;
+                    cursor: pointer;
+                }
+            }
+
+            &__responsive {
+                display: flex;
+                flex-direction: column;
+                line-height: 3.5rem;
+                position: absolute;
+                content: '';
+                top: 100%;
+                width: 100%;
+                background-color: #aaa;
+                right: 0;
+                text-align: center;
+                opacity: 0;
+                z-index: -1;
+                transition: opacity .4s ease-in-out;
+
+                a {
+                    color: #252525;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    transition: .9s ease-in-out;
+
+
+                    &:hover {
+                        color: #14286d;
+                        transition: .9s ease-in-out;
+                    }
+
+                }
+
+                &.active-nav {
+                    opacity: 1;
+                    z-index: 15;
+                    transition: opacity .4s ease-in-out;
+
+                }
             }
         }
     }

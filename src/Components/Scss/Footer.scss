@@ -39,5 +39,13 @@
                 }
             }
         }
+
+        @media screen and (max-width : 1024px) {
+            flex-direction: column;
+
+            &__item{
+                margin: 1rem 0;
+            }
+        }
     }
 }
