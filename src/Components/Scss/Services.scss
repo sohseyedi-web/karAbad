@@ -4,7 +4,7 @@
     &-container {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 75%;
         margin: 0 auto;
 
@@ -14,7 +14,7 @@
             border-radius: 1.5rem;
             padding: .7rem 1rem;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-            // background-color: #14286d;
+            background-color: #eee;
 
             img {
                 width: 100%;

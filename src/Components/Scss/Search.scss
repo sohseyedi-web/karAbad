@@ -2,42 +2,128 @@
     padding: 7rem 0;
 
     &-box {
-        width: 55%;
+        width: 75%;
         height: 100px;
         margin: 0 auto;
-        background-color: #000;
-        border-radius: .5rem;
+        background-color: #eee;
+        border-radius: 1.5rem;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
 
 
 
-        &__input {
-            width: 60%;
-            height: 40%;
+
+        &__input,
+        &__city {
+            width: 30%;
+            height: 70%;
             outline: none;
-            font-size: 2rem;
-            padding-right: .1rem;
+            font-size: 1.2rem;
+            padding-right: .5rem;
+            border-radius: 1rem;
+            border: none;
+            background-color: #14286d;
+            color: #fff;
         }
 
-        &__radio {
+        &__city {
             width: 20%;
-            height: 40%;
         }
+
+
+
 
         &__btn {
-            width: 8%;
-            height: 40%;
-            border-radius: .5rem;
-            background-color: aqua;
-            border: none;
+            width: 10%;
+
         }
     }
 
     &-full {
-        width: 55%;
+        width: 75%;
         margin: .5rem auto;
         text-align: left;
+    }
+
+    &-content {
+        width: 75%;
+        margin: 0 auto;
+        background-color: #14286d;
+        border-radius: 1.5rem;
+        padding: 0 .8rem;
+
+        &__box {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                bottom: -15%;
+                height: 2px;
+                background-color: #fefefe;
+                border-radius: 1rem;
+            }
+
+            input {
+                border: none;
+                border-radius: 1rem;
+                background-color: #eee;
+                color: #252525;
+                padding-right: .5rem;
+                height: 65%;
+                font-size: 1.2rem;
+                outline: none;
+            }
+
+            &-city {
+                width: 20%;
+            }
+
+            &-service {
+                width: 30%;
+                margin: 0 1.8rem;
+            }
+
+            &-btn {
+                margin: 0 1.8rem;
+                width: 10%;
+                height: 65%;
+                border-radius: 1rem;
+                background-color: #ffdb07;
+                border: none;
+            }
+
+            &-pip {
+                height: 65%;
+                margin: 0 1.8rem;
+                width: 2px;
+                background-color: #fefefe;
+                border-radius: 1rem;
+            }
+
+            &-full {
+                color: #fefefe;
+                font-size: 1.2rem;
+                margin-right: 1.5rem;
+            }
+        }
+
+        &__support {
+            width: 100%;
+            margin: 2.5rem 0 1.5rem;
+            text-align: left;
+            padding-bottom: .5rem;
+
+
+            a {
+                color: #fefefe;
+                font-size: 1.2rem;
+            }
+        }
     }
 }
