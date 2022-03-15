@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import { MdClose } from 'react-icons/md'
 import { IoMdFingerPrint } from 'react-icons/io'
 import '../Scss/Navbar.scss'
-import '../../Common/Modal/Modal.scss'
+import Modal from './../../Common/Modal/Modal';
+import { useModal } from './../../Context/ModalProvider';
 const Navbar = () => {
 
-
-    const [modalLogin, setModalLogin] = useState(false);
-    const [modalSupport, setModalSupport] = useState(false);
+    const { openModal } = useModal();
     const [active, setActive] = useState(false);
 
     return (
@@ -34,43 +32,13 @@ const Navbar = () => {
                         <a href='/' className='navbars-items__right-text'>
                             اپلیکیشن
                         </a>
-                        <button className='navbars-items__right-btn btn-log' onClick={() => setModalLogin(!modalLogin)} >ورود ، ثبت نام</button>
-                        {modalLogin && (
-                            <>
-                                <div className="back" onClick={() => setModalLogin(!modalLogin)}></div>
-                                <div className='box'>
-                                    <span className="box-close" onClick={() => setModalLogin(!modalLogin)}><MdClose size={32} /></span>
-                                    <div className="box-details">
-                                        <div className="box-details__title">ورود / ثبت‌نام کارآباد</div>
-                                        <form className="box-details__form">
-                                            <label htmlFor='mobile'>شماره موبایل یا ایمیل</label>
-                                            <input type="text" name='mobile' id='mobile' autocomplete="off" placeholder='شماره موبایل یا ایمیل خود را وارد کنید' />
-                                            <input type="submit" value="ثبت اطلاعات" />
-                                        </form>
-                                    </div>
-                                </div>
-                            </>
-                        )}
+                        <button className='navbars-items__right-btn btn-log'>ورود ، ثبت نام</button>
                     </div>
                     <div className="navbars-items__left">
                         <div className='navbars-items__left-number'>12345 - 021</div>
-                        <button className='navbars-items__left-btn btn-order' data-modal="modalSupp" onClick={() => setModalSupport(!modalSupport)}>پیگیری سفارش</button>
-                        {modalSupport && (
-                            <>
-                                <div className="back" onClick={() => setModalSupport(!modalSupport)}></div>
-                                <div className='box'>
-                                    <span className="box-close" onClick={() => setModalSupport(!modalSupport)}><MdClose size={32} /></span>
-                                    <div className="box-details">
-                                        <div className="box-details__title">پیگیری خدمات</div>
-                                        <form className="box-details__form">
-                                            <label htmlFor='mobile'>شماره پیگیری درخواست</label>
-                                            <input type="text" name='mobile' id='mobile' autocomplete="off" placeholder='شماره پیگیری را وارد کنید' />
-                                            <input type="submit" value="ادامه" />
-                                        </form>
-                                    </div>
-                                </div>
-                            </>
-                        )}
+                        <button className='navbars-items__left-btn btn-order' onClick={openModal}>پیگیری سفارش</button>
+                        <Modal />
+
                         <div className="navbars-items__left-mobile" onClick={() => setActive(!active)}><IoMdFingerPrint size={35} /></div>
                     </div>
                     <div className={active ? "navbars-items__responsive active-nav" : "navbars-items__responsive"} onClick={() => setActive(!active)}>

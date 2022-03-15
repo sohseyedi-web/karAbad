@@ -1,8 +1,11 @@
+import ModalProvider from "./Context/ModalProvider";
 import Home from "./Pages/Home";
 
 function App() {
   return (
-    <Home />
+    <ModalProvider>
+      <Home />
+    </ModalProvider>
   );
 }
 
