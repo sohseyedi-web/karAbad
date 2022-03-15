@@ -38,6 +38,28 @@
                 transition: transform .4s ease-in-out;
 
 
+                &.right-btn {
+                    padding: .6rem 1.5rem;
+                    border-radius: 1.5rem;
+                    border: none;
+                    background-color: #14286d;
+                    font-weight: 600;
+                    color: #fefefe;
+                    transition: all .4s linear;
+
+
+                    &:hover {
+                        background-color: #ffdb07;
+                        color: #252525;
+                        transition: all .4s linear;
+
+                    }
+
+                    &::after {
+                        display: none;
+
+                    }
+                }
 
                 &:hover {
                     transition: all .4s ease-in-out;
